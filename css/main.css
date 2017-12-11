@@ -1,0 +1,76 @@
+/*Reset*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-image {
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.kt-image {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+.bg-image-1 {
+  background-image: url('../assets/images/dawn.png');
+}
+
+.bg-image-2 {
+  background-image: url('../assets/images/night.jpg');  
+}
+
+.bg-image-3 {
+  background-image: url('../assets/images/sunny-day.jpg');  
+}
+
+.kt-image-1 {
+  background-image: url('../assets/images/kitten-large.png');
+}
+
+.kt-image-2 {
+  background-image: url('../assets/images/kitten-small.png');  
+}
+
+.kt-image-3 {
+  background-image: url('../assets/images/kitten-medium.png');  
+}
+
+/* Helpers */
+
+.view-tablet {
+  display: none;
+}
+
+.view-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .view-mobile {
+    display: none;
+  }
+  
+  .view-tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .view-mobile {
+    display: none;
+  }
+  
+  .view-tablet {
+    display: none;
+  }
+  
+  .view-desktop {
+    display: block;
+  }
+}
